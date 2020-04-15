@@ -1,0 +1,15 @@
+.ListItem {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50;
+    color: rgb(10, 1, 19);
+    border-top: 1px solid rgb(66, 63, 63);
+    display: flex;
+    padding: 10px;
+}
+.ListItem p {
+    padding-left: 10px;
+}
+.ListItem-complete {
+  text-decoration: line-through;
+  opacity: 0.5;  
+}
