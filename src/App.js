@@ -38,7 +38,7 @@ onItemClicked(item) {
 
 onKeyUp(event) {
   let text = event.target.value;
-  if (event.keyCode === 32) {
+  if (event.keyCode === 13) {
   if (!text) {
     return;
   }
@@ -67,7 +67,7 @@ render(){
   const {listItem, newItem} = this.state;
   if (listItem.length) {
    return (
-   <form className="App">
+   <div className="App">
    <div className="Header">
     <img src = {tick} width = "30" height = "30" alt="icon" />
     <input type="text" placeholder = "Add action" value={newItem} onChange={this.onChange} onKeyUp={this.onKeyUp}/>
@@ -81,7 +81,7 @@ render(){
      />
   )}
    </div>
-   </form>
+   </div>
 )}
   else {
    return (
